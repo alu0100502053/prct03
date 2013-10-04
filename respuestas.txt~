@@ -1,5 +1,4 @@
-21) 
-Que "\t\n" no interpola mientras que '\t\n' si lo hace.
+21) Que "\t\n" no interpola mientras que '\t\n' si lo hace.
 22) 
 los elementos que les pasamos los pone entre comillas simples.
 %q: se usa para poner una citación con comillas simples
@@ -214,52 +213,13 @@ hello
 => true.
 
 48)
->> s= "Ruby"
+>> s = "Ruby"
 => "Ruby"
->> t=s
-=>"Ruby"
->> t[-1]=" "
-=> " "
+>> t = s
+=> "Ruby"
+>> t[-1] = ""
+=> ""
 >> print s
 Rub => nil
-t = "Java"
-=>"Java"
->> print s, t
-Rub Java => nil
 
-49)
->> "%d %s" %[3, "rubies"]
-=> TypeError: no implicit conversion of String into Integer
-	from (irb):18:in `[]'
-	from (irb):18
-	from /usr/local/rvm/rubies/ruby-2.0.0-p247/bin/irb:13:in `<main>'
-
-50)
->> x,y = 4,5
-=> [4, 5]
->>z=x > y ? x : y
-=> 5 
->> x,y,z = [1,2,3]
-=> [1, 2, 3]
-
-51)
->> x= { :a => 1, :b => 2}
-=> {:a=>1, :b=>2} 
->> x.keys
-=> [:a, :b] 
- 
-52)
-ejecuta el bloque de código siguiente con los argumentos 4,5
-
-53)
-Ninguna diferencia.
-
-54)
-=> ["hello", "world", "hello", "LPP"] 
-
-Devuelve un array cuyo elementos son cada una de las palabras. La expresion regular /\W+/ busca cualquier carácter que no sea una letra o guión bajo, una o mas veces.
-
-55)
-En la primera linea se crea un hash.
-en la segunda se pide que se devuelva las claves ordenadas al igual que tambien, a traves de un bloque, el valor de dichas claves.
 
